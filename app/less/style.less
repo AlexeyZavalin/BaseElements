@@ -116,11 +116,13 @@
 			color:#2E7D32;
 		}
 		&.active {
-			background: #B0BEC5;			
-			box-shadow: 0 10px 0 -5px #B0BEC5;
+			background: #ECEFF1;			
+			box-shadow: 0 10px 0 -5px #ECEFF1;
 			border-left: 5px solid #424242;
 			border-right: 5px solid #424242;
 			border-top: 5px solid #424242;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
 			a {
 				color: #EF6C00;
 				text-shadow: 1px 1px 0 #3E2723;
@@ -144,6 +146,14 @@
 		margin: 0;
 		display: none;
 		border: 5px solid #424242;
+		&:not(:first-child) {
+			border-top-left-radius: 10px;
+		}
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		&:first-child {
+			border-top-right-radius: 10px;
+		}
 		padding: 10px;
 		background: #ECEFF1;
 		&.active {

@@ -111,11 +111,13 @@
   color: #2E7D32;
 }
 .tabs .tabs__button.active {
-  background: #B0BEC5;
-  box-shadow: 0 10px 0 -5px #B0BEC5;
+  background: #ECEFF1;
+  box-shadow: 0 10px 0 -5px #ECEFF1;
   border-left: 5px solid #424242;
   border-right: 5px solid #424242;
   border-top: 5px solid #424242;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .tabs .tabs__button.active a {
   color: #EF6C00;
@@ -137,8 +139,16 @@
   margin: 0;
   display: none;
   border: 5px solid #424242;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   padding: 10px;
   background: #ECEFF1;
+}
+.tab__content .tab__content__item:not(:first-child) {
+  border-top-left-radius: 10px;
+}
+.tab__content .tab__content__item:first-child {
+  border-top-right-radius: 10px;
 }
 .tab__content .tab__content__item.active {
   display: block;
