@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+/*----- Accordeon ------*/
 .sub_menu {
   display: none;
   top: 100%;
@@ -87,4 +88,58 @@
   border-radius: 3px;
   background: #376ea6;
   box-shadow: inset 0px 0px 3px 1px black;
+}
+/*----- Tabs ------*/
+.tabs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.tabs .tabs__button {
+  border-right: 1px solid black;
+  list-style: none;
+  flex-grow: 1;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: #FFF176;
+}
+.tabs .tabs__button a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #2E7D32;
+}
+.tabs .tabs__button.active {
+  background: #B0BEC5;
+  box-shadow: 0 10px 0 -5px #B0BEC5;
+  border-left: 5px solid #424242;
+  border-right: 5px solid #424242;
+  border-top: 5px solid #424242;
+}
+.tabs .tabs__button.active a {
+  color: #EF6C00;
+  text-shadow: 1px 1px 0 #3E2723;
+}
+.tabs .tabs__button:hover {
+  cursor: pointer;
+}
+.tab__content {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.tab__content h1 {
+  margin: 5px 0;
+}
+.tab__content .tab__content__item {
+  margin: 0;
+  display: none;
+  border: 5px solid #424242;
+  padding: 10px;
+  background: #ECEFF1;
+}
+.tab__content .tab__content__item.active {
+  display: block;
 }
